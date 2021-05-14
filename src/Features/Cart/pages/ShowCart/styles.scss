@@ -1,0 +1,54 @@
+.list-item {
+    li {
+        text-decoration: none;
+        list-style-type: none;
+        position: relative;
+    }
+    .buttons {
+        float: right;
+        display: flex;
+        border: 1px solid rgb(200, 200, 200);
+        border-radius: 3px;
+        position: absolute;
+        top: 4em;
+        right: 2em;
+    }
+    input {
+        border: none;
+        background: transparent;
+        width: 25px;
+        text-align: center;
+        font-size: 13px;
+        appearance: none;
+        border-top: 1px solid rgb(200, 200, 200);
+        border-bottom: 1px solid rgb(200, 200, 200);
+        margin: 0px;
+    }
+    button {
+        border-right: none;
+        border-left: 1px solid rgb(200, 200, 200);
+        border-top: 1px solid rgb(200, 200, 200);
+        display: inline-block;
+        border-right: 1px solid rgb(200, 200, 200);
+        border-bottom: 1px solid rgb(200, 200, 200);
+        color: rgb(153, 153, 153);
+        padding: 6px 12px;
+        cursor: pointer;
+    }
+    h2 {
+        position: absolute;
+        left: 510px;
+        top: 300px;
+        color: orangered;
+    }
+    .Price {
+        float: right;
+        position: absolute;
+        display: flex;
+        top: 4.3em;
+        right: 10em;
+    }
+    .paper {
+        margin-bottom: 2em;
+    }
+}

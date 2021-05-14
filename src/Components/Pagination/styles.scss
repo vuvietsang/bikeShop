@@ -1,0 +1,18 @@
+.paging-wrap {
+    display: flex;
+    margin-left: 350px;
+    button {
+        margin: 5px;
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        opacity: 80%;
+        background-color: rgba(216, 208, 208, 0.3);
+        border: none;
+    }
+    button:active {
+        background-color: rgba(216, 208, 208, 1);
+    }
+    margin-top: 40px;
+}

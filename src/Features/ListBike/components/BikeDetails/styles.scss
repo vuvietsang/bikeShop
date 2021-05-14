@@ -1,0 +1,22 @@
+.item {
+    position: relative;
+    &_image {
+        margin-top: 20px;
+        & > img {
+            clear: both;
+            width: 190px;
+            height: 190px;
+            border-radius: 0.6rem;
+        }
+    }
+
+    &_name {
+        font-weight: bold;
+    }
+    padding-top: 20px;
+    border-radius: 10px;
+}
+.price {
+    position: absolute;
+    bottom: 2px;
+}
