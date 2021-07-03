@@ -114,6 +114,8 @@ const initialValues = [
 ];
 function ListBike(props) {
 
+    const [num, setNum] = useState(0);
+
     const [filter, setFilter] = useState({
         _page: 1
         , _limit: 10,
@@ -222,9 +224,6 @@ function ListBike(props) {
         setCart(newCart);
 
     };
-
-
-
     const classes = useStyles();
 
     const [listBike, setListBike] = useState(initialValues);
@@ -238,6 +237,8 @@ function ListBike(props) {
         });
         setListBike(newList);
     }, [searchValue])
+
+
 
     const handlePagination = (values) => {
         setFilter({ ...filter, _page: values });

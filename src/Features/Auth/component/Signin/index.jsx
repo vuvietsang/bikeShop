@@ -23,7 +23,6 @@ function Signin({ onclose }) {
             //auto set username = email
             values.identifier = values.email;
 
-            console.log(values);
             // console.log('Form Submit : ', values);
             const action = login(values);
 
