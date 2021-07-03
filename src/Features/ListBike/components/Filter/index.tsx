@@ -1,17 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.scss';
-Filter.propTypes = {
-    filterByPrice: PropTypes.func,
-};
-Filter.defaultProps = {
-    filerByPrice: null,
+
+interface Props {
+    filterByPrice: (values:object) => void
 }
-function Filter({ filterByPrice }) {
-    const filerByPrice = (values) => {
-        if (filerByPrice) {
-            filterByPrice(values);
-        }
+const Filter: React.FC<Props> = (props) => {
+    const { filterByPrice } = props;
+
+    const filerByPrice = (values: object) => {
+        filterByPrice(values);
     }
     return (
         <div>
